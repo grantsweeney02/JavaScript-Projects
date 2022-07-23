@@ -7,10 +7,11 @@ const secondsEl = document.getElementById('seconds');
 
 
 function countdown(date) {
-    const picked = date || '1 Jan 2023';
+    const today = new Date();
+    const year = today.getFullYear();
+    const picked = date || '1 Jan ${year}';
     const pickDate = new Date(picked);
     const currentDate = new Date();
-
 
     const totalSeconds = (pickDate - currentDate) / 1000;
 
