@@ -96,7 +96,7 @@ submitBtn.addEventListener("click", () => {
 		if (currentQuestion < quizData.length) {
 			loadQuiz();
 		} else {
-			quiz.innerHTML = `<h2>Your Score: ${score}/${quizData.length}</h2>`;
+			quiz.innerHTML = `<h2 class="score__header">Your Score: ${score}/${quizData.length}</h2>`;
 		}
 	}
 });

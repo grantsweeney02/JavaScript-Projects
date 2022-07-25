@@ -61,3 +61,9 @@ body {
 .quiz__button:hover {
 	background-color: rgb(226, 147, 0);
 }
+
+.score__header {
+	padding: 1rem;
+	text-align: center;
+	margin: 0;
+}
